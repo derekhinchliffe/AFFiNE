@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		50E218302E0BE1A700EA4C6E /* Intelligents in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 50802D602D112F8700694021 /* Intelligents */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		50FF428A2D2E757E0050AA83 /* ApplicationBridgedWindowScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FF42892D2E757E0050AA83 /* ApplicationBridgedWindowScript.swift */; };
 		50FF428C2D2E77CC0050AA83 /* AffineViewController+AIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FF428B2D2E77CC0050AA83 /* AffineViewController+AIButton.swift */; };
+		65C873CE2E6F3CB70052117E /* AffineShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 65C873C42E6F3CB70052117E /* AffineShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9D52FC432D26CDBF00105D0A /* JSValueContainerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52FC422D26CDB600105D0A /* JSValueContainerExt.swift */; };
 		9D5622962D64A6A5009F1BE4 /* AuthPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5622952D64A6A4009F1BE4 /* AuthPlugin.swift */; };
 		9D6A85332CCF6DA700DAB35F /* HashcashPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6A85322CCF6DA700DAB35F /* HashcashPlugin.swift */; };
@@ -36,6 +37,16 @@
 		E93B276C2CED92B1001409B8 /* NavigationGesturePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B276B2CED92B1001409B8 /* NavigationGesturePlugin.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		65C873CC2E6F3CB70052117E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504EC2FC1FED79650016851F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65C873C32E6F3CB70052117E;
+			remoteInfo = AffineShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		50E218312E0BE1A700EA4C6E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -46,6 +57,17 @@
 				50E218302E0BE1A700EA4C6E /* Intelligents in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65C873D32E6F3CB70052117E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				65C873CE2E6F3CB70052117E /* AffineShareExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -60,6 +82,8 @@
 		50A285D62D112A5E000D5A6D /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		50FF42892D2E757E0050AA83 /* ApplicationBridgedWindowScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationBridgedWindowScript.swift; sourceTree = "<group>"; };
 		50FF428B2D2E77CC0050AA83 /* AffineViewController+AIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AffineViewController+AIButton.swift"; sourceTree = "<group>"; };
+		65C873C42E6F3CB70052117E /* AffineShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AffineShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		65C873D42E6FED400052117E /* AFFiNE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AFFiNE.entitlements; sourceTree = "<group>"; };
 		9D52FC422D26CDB600105D0A /* JSValueContainerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSValueContainerExt.swift; sourceTree = "<group>"; };
 		9D5622952D64A6A4009F1BE4 /* AuthPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPlugin.swift; sourceTree = "<group>"; };
 		9D6A85322CCF6DA700DAB35F /* HashcashPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashcashPlugin.swift; sourceTree = "<group>"; };
@@ -87,11 +111,27 @@
 		FC68EB0AF532CFC21C3344DD /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		65C873CF2E6F3CB70052117E /* Exceptions for "AffineShareExtension" folder in "AffineShareExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 65C873C32E6F3CB70052117E /* AffineShareExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C45499AB2D140B5000E21978 /* NBStore */ = {
+		65C873C52E6F3CB70052117E /* AffineShareExtension */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				65C873CF2E6F3CB70052117E /* Exceptions for "AffineShareExtension" folder in "AffineShareExtension" target */,
 			);
+			path = AffineShareExtension;
+			sourceTree = "<group>";
+		};
+		C45499AB2D140B5000E21978 /* NBStore */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
 			path = NBStore;
 			sourceTree = "<group>";
 		};
@@ -105,6 +145,13 @@
 				9DFCD1462D27D1D70028C92B /* libaffine_mobile_native.a in Frameworks */,
 				50802D612D112F8700694021 /* Intelligents in Frameworks */,
 				2E0DD47B57B994A104B25EED /* Pods_AFFiNE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65C873C12E6F3CB70052117E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,9 +171,11 @@
 		504EC2FB1FED79650016851F = {
 			isa = PBXGroup;
 			children = (
+				65C873D42E6FED400052117E /* AFFiNE.entitlements */,
 				C4C97C722D0307B700BC2AD1 /* uniffi */,
 				9D90BE242CCB9876006677DB /* App */,
 				50802D5F2D112F7D00694021 /* Packages */,
+				65C873C52E6F3CB70052117E /* AffineShareExtension */,
 				504EC3051FED79650016851F /* Products */,
 				7F8756D8B27F46E3366F6CEA /* Pods */,
 				27E2DDA53C4D2A4D1A88CE4A /* Frameworks */,
@@ -139,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				504EC3041FED79650016851F /* AFFiNE.app */,
+				65C873C42E6F3CB70052117E /* AffineShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -249,10 +299,12 @@
 				504EC3021FED79650016851F /* Resources */,
 				9592DBEFFC6D2A0C8D5DEB22 /* [CP] Embed Pods Frameworks */,
 				50E218312E0BE1A700EA4C6E /* Embed Frameworks */,
+				65C873D32E6F3CB70052117E /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				65C873CD2E6F3CB70052117E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				C45499AB2D140B5000E21978 /* NBStore */,
@@ -262,6 +314,28 @@
 			productReference = 504EC3041FED79650016851F /* AFFiNE.app */;
 			productType = "com.apple.product-type.application";
 		};
+		65C873C32E6F3CB70052117E /* AffineShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65C873D02E6F3CB70052117E /* Build configuration list for PBXNativeTarget "AffineShareExtension" */;
+			buildPhases = (
+				65C873C02E6F3CB70052117E /* Sources */,
+				65C873C12E6F3CB70052117E /* Frameworks */,
+				65C873C22E6F3CB70052117E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				65C873C52E6F3CB70052117E /* AffineShareExtension */,
+			);
+			name = AffineShareExtension;
+			packageProductDependencies = (
+			);
+			productName = AffineShareExtension;
+			productReference = 65C873C42E6F3CB70052117E /* AffineShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -269,12 +343,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 0920;
 				TargetAttributes = {
 					504EC3031FED79650016851F = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 1600;
+					};
+					65C873C32E6F3CB70052117E = {
+						CreatedOnToolsVersion = 16.4;
 					};
 				};
 			};
@@ -292,6 +369,7 @@
 			projectRoot = "";
 			targets = (
 				504EC3031FED79650016851F /* AFFiNE */,
+				65C873C32E6F3CB70052117E /* AffineShareExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -308,6 +386,13 @@
 				9D90BE2B2CCB9876006677DB /* config.xml in Resources */,
 				9D90BE2D2CCB9876006677DB /* Main.storyboard in Resources */,
 				9D90BE2E2CCB9876006677DB /* public in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65C873C22E6F3CB70052117E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,8 +424,12 @@
 			);
 			inputFileListPaths = (
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -391,7 +480,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65C873C02E6F3CB70052117E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65C873CD2E6F3CB70052117E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65C873C32E6F3CB70052117E /* AffineShareExtension */;
+			targetProxy = 65C873CC2E6F3CB70052117E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9D90BE222CCB9876006677DB /* Main.storyboard */ = {
@@ -526,10 +630,11 @@
 			baseConfigurationReference = 3256F4410D881A03FE77D092 /* Pods-AFFiNE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AFFiNE.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 12;
-				DEVELOPMENT_TEAM = 964G86XT2P;
+				DEVELOPMENT_TEAM = 3RSYJR2KUZ;
 				INFOPLIST_FILE = App/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -543,7 +648,7 @@
 				);
 				MARKETING_VERSION = 0.23.1;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-DDEBUG\"";
-				PRODUCT_BUNDLE_IDENTIFIER = app.affine.pro;
+				PRODUCT_BUNDLE_IDENTIFIER = au.haines.affine.unbranded;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -562,10 +667,11 @@
 			baseConfigurationReference = E5E5070D1CA1200D4964D91F /* Pods-AFFiNE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AFFiNE.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 12;
-				DEVELOPMENT_TEAM = 964G86XT2P;
+				DEVELOPMENT_TEAM = 3RSYJR2KUZ;
 				INFOPLIST_FILE = App/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -579,7 +685,7 @@
 				);
 				MARKETING_VERSION = 0.23.1;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = app.affine.pro;
+				PRODUCT_BUNDLE_IDENTIFIER = au.haines.affine.unbranded;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -590,6 +696,84 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		65C873D12E6F3CB70052117E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = AffineShareExtension/AffineShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3RSYJR2KUZ;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AffineShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AffineShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = au.haines.affine.unbranded.AffineShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65C873D22E6F3CB70052117E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = AffineShareExtension/AffineShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3RSYJR2KUZ;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AffineShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AffineShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = au.haines.affine.unbranded.AffineShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -610,6 +794,15 @@
 			buildConfigurations = (
 				504EC3171FED79650016851F /* Debug */,
 				504EC3181FED79650016851F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65C873D02E6F3CB70052117E /* Build configuration list for PBXNativeTarget "AffineShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65C873D12E6F3CB70052117E /* Debug */,
+				65C873D22E6F3CB70052117E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -701,6 +701,7 @@ __metadata:
     "@types/react-dom": "npm:^19.0.2"
     async-call-rpc: "npm:^6.4.2"
     capacitor-plugin-app-tracking-transparency: "npm:^2.0.5"
+    capacitor-share-extension: "https://github.com/calvinckho/capacitor-share-extension.git#capacitor-6"
     cross-env: "npm:^7.0.3"
     idb: "npm:^8.0.0"
     next-themes: "npm:^0.4.4"
@@ -18070,6 +18071,13 @@ __metadata:
   peerDependencies:
     "@capacitor/core": ">= 3.0.0"
   checksum: 10/dc43c3f7e3241067ef960416a53681b44ecf9ac9c9e22aef3a4fe81afd692bc466fe517cf85a260cf1b0ad4e7f8c961ad2660485ff5fb0bdee74f42ad660e4e2
+  languageName: node
+  linkType: hard
+
+"capacitor-share-extension@https://github.com/calvinckho/capacitor-share-extension.git#capacitor-6":
+  version: 6.0.0-beta.0
+  resolution: "capacitor-share-extension@https://github.com/calvinckho/capacitor-share-extension.git#commit=5560ceecfabe0ddd991d2ad74e2ba9c4299e5d6f"
+  checksum: 10/e2854f96a26272aa41a343858b1dc97692544b0af545b90e336316dfedeaeccee63fc064d6fb669bb0c0ce66040aafc9903c1754f8060d6dd79a05f7ab097769
   languageName: node
   linkType: hard
 

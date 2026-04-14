@@ -42,6 +42,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Called when the app was launched with an activity, including Universal Links.
     // Feel free to add additional processing here, but if you want the App API to support
     // tracking app url opens, make sure to keep this call
-    ApplicationDelegateProxy.shared.application(application, continue: userActivity, restorationHandler: restorationHandler)
+    
+    // Add some logging to help debug issues with Universal Links
+    print("AppDelegate: continue userActivity called with activityType: \(userActivity.activityType), webpageURL: \(String(describing: userActivity.webpageURL))")
+    
+
+    return ApplicationDelegateProxy.shared.application(application, continue: userActivity, restorationHandler: restorationHandler)
   }
 }
